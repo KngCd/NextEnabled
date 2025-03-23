@@ -1,50 +1,42 @@
 DOM.insertAdjacentHTML(
-  "beforeend",
-  `
-
-  <!-- Denver Space -->
-
-  <div class="vh-100 d-flex flex-column justify-content-center align-items-center text-center position-relative overflow-hidden" 
-       style="background: radial-gradient(circle at 50% 50%, #0b0d29, #000000);"> 
-
-      <!-- Animated Stars Layer -->
-      <div class="position-absolute top-0 start-0 w-100 h-100" id="stars"></div>
-
-      <!-- Content Section -->
-      <div class="position-relative p-4 rounded shadow" 
-           style="background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.1);">
-          <h1 style="color: #00d4ff; font-size: 3rem; text-shadow: 0 0 8px #00d4ff;">Welcome to Denver's Section</h1>
-          <p style="color: #ffffffb3; font-size: 1.2rem; margin-bottom: 1rem;">Front-End Developer at Tech Executive Labs</p>
-          
-          <button class="btn btn-outline-danger" 
-                  onclick="alert('Thanks for Dropping out you deserve it!')" 
-                  style="transition: transform 0.3s;">
-              DROP OUT NOW!
-          </button>
-      </div>
-  </div>
-
-  <style>
-      /* Starry Background */
-      #stars {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* A star pattern image */
-          background-size: cover;
-          opacity: 0.8;
-          animation: starMove 100s linear infinite;
-      }
-
-      @keyframes starMove {
-          0% { background-position: 0 0; }
-          100% { background-position: 1000px 1000px; }
-      }
-
-      /* Button Hover Effect */
-      button:hover {
-          transform: scale(1.1);
-      }
-  </style>
-`
+    "beforeend",
+    `
+    <!-- Denver Space -->
+    <div class="vh-100 d-flex flex-column position-relative overflow-hidden" 
+         style="background: radial-gradient(circle at 50% 50%, #0b0d29, #000000); padding: 60px;">
+         
+      <!-- Features Section -->
+      <section style="margin-bottom: 80px; width: 100%;">
+        <h2 style="margin-bottom: 10px; color: #f5f5f5; font-size: 32px; font-weight: bold; text-transform: uppercase;">Features</h2>
+        <div style="width: 100%; height: 50px; margin-bottom: 10px;">
+        </div>
+        <div style="display: flex; gap: 40px; width: 100%;">
+            <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                <p class="text-gray-400 text-sm" style="color: #cccccc;">Lorem ipsum dolor sit amet consectetur adipiscing elit nec in mauris posuere congue.Lorem ipsum dolor sit amet consectetur adipiscing elit nec in mauris posuere congue.Lorem ipsum dolor sit amet consectetur adipiscing elit nec in mauris posuere congue.Lorem ipsum dolor sit amet consectetur adipiscing elit nec in mauris posuere congue.</p>
+            </div>
+            <div style="flex: 1;">
+                <img src="/NextEnabled/assets/usb-image.png" alt="USB device" 
+                     style="width: 100%; height: 300px; object-fit: cover;" class="rounded">
+            </div>
+        </div>
+      </section>
+  
+      <!-- Results Section -->
+      <section style="width: 100%;">
+        <h2 style="margin-bottom: 10px; color: #f5f5f5; font-size: 32px; font-weight: bold; text-transform: uppercase;">Results</h2>
+        <div style="display: flex; gap: 40px; margin-bottom: 40px; width: 100%;">
+        </div>
+        <div style="display: flex; gap: 40px; margin-bottom: 40px; width: 100%;">
+            <div style="flex: 1;">
+                <img src="/NextEnabled/assets/flag-image.png" alt="Flag with logo" 
+                     style="width: 100%; height: 300px; object-fit: cover;" class="rounded">
+            </div>
+            <div style="flex: 1; display: flex; align-items: center; justify-content: center;">
+                <p class="text-gray-400 text-sm" style="color: #cccccc;">Lorem ipsum dolor sit amet consectetur adipiscing elit nec in mauris posuere congue.Lorem ipsum dolor sit amet consectetur adipiscing elit nec in mauris posuere congue.Lorem ipsum dolor sit amet consectetur adipiscing elit nec in mauris posuere congue.Lorem ipsum dolor sit amet consectetur adipiscing elit nec in mauris posuere congue.</p>
+            </div>
+        </div>
+      </section>
+  
+    </div>
+    `
 );
