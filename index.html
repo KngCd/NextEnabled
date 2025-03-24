@@ -42,213 +42,215 @@
       </svg>
     </div>
 
-  <main class="container z-10 overflow-x-hidden">
-    <!-- Cedrick Space -->
-    <header class="sticky top-[38px] h-[62px] w-full rounded-tl-[30px] rounded-br-[30px] z-50 flex items-center justify-between px-4 bg-[#333643B2]">
-      <!-- Logo & Name -->
-      <div class="flex items-center gap-2">
-        <img src="assets/logo.png" alt="Tech Executive Labs" class="mt-2">
-        <p class="text-[20px] font-bold text-white" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);">
-          <span class="text-white">Tech</span>
-          <span class="text-[#B7D1FF]">Executive</span>
-          <span class="text-white">Labs</span>
-        </p>
-      </div>
-
-      <!-- Hamburger Button -->
-      <div class="relative mt-2" x-data="{ open: false }">
-        <button @click="open = !open" class="text-white text-3xl focus:outline-none">
-          <!-- Open Menu Icon -->
-          <span x-show="!open">
-            <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 2C0 0.89543 0.895431 0 2 0H23V2.25C23 3.35457 22.1046 4.25 21 4.25H0V2Z" fill="#e4e4e4"/>
-              <path d="M0 6.375H21C22.1046 6.375 23 7.27043 23 8.375V10.625H2C0.89543 10.625 0 9.72957 0 8.625V6.375Z" fill="#e4e4e4"/>
-              <path d="M0 14.75C0 13.6454 0.895431 12.75 2 12.75H23V15C23 16.1046 22.1046 17 21 17H0V14.75Z" fill="#e4e4e4"/>
-            </svg>
-          </span>
-          <!-- Close Menu Icon -->
-          <span x-show="open">
-            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M19.5 6.5L6.5 19.5M6.5 6.5L19.5 19.5" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
-        </button>
-
-        <!-- Dropdown Menu -->
-        <div x-show="open" @click.away="open = false" class="absolute right-0 top-[70px] bg-[#333643] text-white rounded-md w-48 shadow-lg">
-          <a href="#" class="block px-4 py-2 hover:bg-[#44485B]">Home</a>
-          <a href="#" class="block px-4 py-2 hover:bg-[#44485B]">About</a>
-          <a href="#" class="block px-4 py-2 hover:bg-[#44485B]">Services</a>
-          <a href="#" class="block px-4 py-2 hover:bg-[#44485B]">Contact</a>
+    <main class="container z-10">
+        <!-- Cedrick Space -->
+        <header class="sticky top-[38px] h-[62px] w-full rounded-tl-[30px] rounded-br-[30px] z-50 flex items-center justify-between px-4 bg-[#333643B2]">        
+        <!-- Logo & Name -->
+        <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="Tech Executive Labs" class="mt-2">
+            <p class="text-[20px] font-bold text-white" style="text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.8);">
+            <span class="text-white">Tech</span>
+            <span class="text-[#B7D1FF]">Executive</span>
+            <span class="text-white">Labs</span>
+            </p>
         </div>
-      </div>
-    </header>
 
-    <section class="mt-[100px] mb-[80px] w-full">
-      <p class="tracking-[10px] mb-[10px] font-bold text-5xl bg-gradient-to-r from-neutral-600 via-white to-neutral-600 bg-clip-text text-transparent inline-block">
-        Next Enabled
-      </p>
-      <img src="assets/nextenabled.png" alt="Next Enabled" class="w-full h-[482px] object-cover rounded-tl-[20px] rounded-br-[20px]">
-      <p class="mt-20 text-white text-[20px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni quis nostrud exercitation ullamco laboris nisi sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.     </p>
-    </section>
+        <!-- Hamburger Button -->
+        <div class="relative mt-2" x-data="{ open: false }">
+            <button @click="open = !open" class="text-white text-3xl focus:outline-none">
+            <!-- Open Menu Icon -->
+            <span x-show="!open">
+                <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 2C0 0.89543 0.895431 0 2 0H23V2.25C23 3.35457 22.1046 4.25 21 4.25H0V2Z" fill="#e4e4e4"/>
+                <path d="M0 6.375H21C22.1046 6.375 23 7.27043 23 8.375V10.625H2C0.89543 10.625 0 9.72957 0 8.625V6.375Z" fill="#e4e4e4"/>
+                <path d="M0 14.75C0 13.6454 0.895431 12.75 2 12.75H23V15C23 16.1046 22.1046 17 21 17H0V14.75Z" fill="#e4e4e4"/>
+                </svg>
+            </span>
+            <!-- Close Menu Icon -->
+            <span x-show="open">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.5 6.5L6.5 19.5M6.5 6.5L19.5 19.5" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+            </button>
 
-    <!-- Denver Space -->
-    <div class="flex flex-col relative overflow-hidden bg-gradient-radial from-[#0b0d29] to-black">
-        <!-- Features Section -->
-        <section class="mb-20 w-full">
-            <h2 class="text-2xl md:text-4xl font-bold uppercase mb-[-23px] bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 text-transparent bg-clip-text">Features</h2>
-            <div class="w-full h-12 "></div>
-            <div class="flex flex-col md:flex-row gap-10 w-full">
-                <div class="bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-md p-6 rounded-tl-2xl rounded-br-2xl flex flex-col md:flex-row w-full shadow-lg">
-                    <div class="flex-1 flex items-center justify-center mr-[7px]">
-                        <p class="text-gray-400 text-sm md:text-base text-left">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni quis nostrud exercitation ullamco laboris nisi sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   </p>
+            <!-- Dropdown Menu -->
+            <div x-show="open" @click.away="open = false" class="absolute right-0 top-[70px] bg-[#333643] text-white rounded-md w-48 shadow-lg">
+            <a href="#" class="block px-4 py-2 hover:bg-[#44485B]">Home</a>
+            <a href="#" class="block px-4 py-2 hover:bg-[#44485B]">About</a>
+            <a href="#" class="block px-4 py-2 hover:bg-[#44485B]">Services</a>
+            <a href="#" class="block px-4 py-2 hover:bg-[#44485B]">Contact</a>
+            </div>
+        </div>
+        </header>
+
+        <section class="mt-[100px] mb-[80px] w-full">
+            <p class="tracking-[10px] mb-[10px] font-bold text-5xl bg-gradient-to-r from-neutral-600 via-white to-neutral-600 bg-clip-text text-transparent inline-block">
+                Next Enabled
+            </p>
+            <img src="assets/nextenabled.png" 
+                alt="Next Enabled" 
+                class="w-full h-[482px] object-cover rounded-tl-[20px] rounded-br-[20px] 
+                    shadow-[0_10px_40px_10px_rgba(0,0,0,0.6)]">
+            <p class="mt-20 text-white text-[17px] font-normal">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni quis nostrud exercitation ullamco laboris nisi sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.     </p>
+        </section>
+
+        <!-- Denver Space -->
+        <div class="flex flex-col relative bg-gradient-radial from-[#0b0d29] to-black">
+            <!-- Features Section -->
+            <section class="mb-20 w-full">
+                <h2 class="text-2xl md:text-4xl font-bold uppercase mb-[-23px] bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 text-transparent bg-clip-text">Features</h2>
+                <div class="w-full h-12 "></div>
+                <div class="flex flex-col md:flex-row gap-10 w-full">
+                    <div class="bg-gradient-to-br from-white/10 via-white/5 to-white/10 backdrop-blur-md p-6 rounded-tl-2xl rounded-br-2xl flex flex-col md:flex-row w-full shadow-[0_10px_40px_10px_rgba(0,0,0,0.6)]">
+                        <div class="flex-1 flex items-center justify-center mr-[7px]">
+                            <p class="text-gray-400 text-sm md:text-base text-left mb-4 md:mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni quis nostrud exercitation ullamco laboris nisi sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.   </p>
+                        </div>
+                        <div class="flex-1">
+                            <img src="assets/usb-image.png" alt="USB device" 
+                                class="w-full h-72 object-cover rounded-tl-2xl rounded-br-2xl shadow-lg">
+                        </div>
                     </div>
-                    <div class="flex-1">
-                        <img src="assets/usb-image.png" alt="USB device" 
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="w-full">
+                <h2 class="text-2xl md:text-4xl font-bold uppercase mb-4 bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 text-transparent bg-clip-text">Results</h2>
+                <div class="flex flex-col md:flex-row gap-10 w-full mb-10">
+                    <div class="flex-1 mr-[6px]">
+                        <img src="assets/flag-image.png" alt="Flag with logo" 
                             class="w-full h-72 object-cover rounded-tl-2xl rounded-br-2xl shadow-lg">
                     </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        <p class="text-gray-400 text-sm md:text-base text-left">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni quis nostrud exercitation ullamco laboris nisi sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Lourenz Space - Testimonies Section -->
+        <section class="flex flex-col items-center justify-center w-full px-6 md:px-12">
+            <!-- Title with Horizontal Lines -->
+            <div class="flex items-center w-full">
+                <div class="flex-grow border-t border-gray-500"></div>
+                <h2 class="text-4xl font-bold bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 text-transparent bg-clip-text mx-6">
+                    Testimonies
+                </h2>
+                <div class="flex-grow border-t border-gray-500"></div>
+            </div>
+
+            <!-- Spacing Below Title -->
+            <div class="mb-10"></div>
+
+            <!-- Carousel Container -->
+            <div class="relative w-full overflow-hidden">
+                <div id="carousel" class="flex transition-transform duration-700 ease-in-out space-x-6">
+                    <!-- Image Cards -->
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
+                        <img src="assets/logo-white-bg.png" alt="Testimony 1" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
+                        <img src="assets/logo-white-bg.png" alt="Testimony 2" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
+                        <img src="assets/logo-white-bg.png" alt="Testimony 3" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
+                        <img src="assets/logo-white-bg.png" alt="Testimony 4" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
+                        <img src="assets/logo-white-bg.png" alt="Testimony 5" class="w-full h-56 object-cover">
+                    </div>
+                </div>
+
+                <!-- Navigation Dots -->
+                <div class="flex justify-center space-x-2 mt-6">
+                    <span class="dot w-3 h-3 bg-gray-500 rounded-full cursor-pointer"></span>
+                    <span class="dot w-3 h-3 bg-gray-500 rounded-full cursor-pointer"></span>
+                    <span class="dot w-3 h-3 bg-gray-500 rounded-full cursor-pointer"></span>
                 </div>
             </div>
+
+            <!-- Small Paragraph Below -->
+            <p class="text-gray-300 text-lg text-center max-w-4xl mt-6 px-4">
+                Hear from those who have experienced our service firsthand. Their stories reflect the trust and satisfaction we've built over time, ensuring a seamless and reliable experience for all.
+            </p>
         </section>
 
-        <!-- Results Section -->
-        <section class="w-full">
-            <h2 class="text-2xl md:text-4xl font-bold uppercase mb-4 bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 text-transparent bg-clip-text">Results</h2>
-            <div class="flex flex-col md:flex-row gap-10 w-full mb-10">
-                <div class="flex-1 mr-[6px]">
-                    <img src="assets/flag-image.png" alt="Flag with logo" 
-                        class="w-full h-72 object-cover rounded-tl-2xl rounded-br-2xl shadow-lg">
+        <!-- Footer - Full Screen Width -->
+        <footer class="text-gray-300 py-10 w-full px-6 md:px-12">
+            <div class="flex flex-col items-center text-center md:text-left w-full">
+                <!-- Title with Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="assets/logo.png" alt="Tech Executive Labs Logo" class="h-10 mt-2">
+                    <h2 class="text-2xl font-bold text-white">Tech Executive Labs</h2>
                 </div>
-                <div class="flex-1 flex items-center justify-center">
-                    <p class="text-gray-400 text-sm md:text-base text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris incididunt ut labore et dolore magna aliqua. Ut enim ad minim veni quis nostrud exercitation ullamco laboris nisi sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>
+
+                <!-- Navigation Links -->
+                <div class="flex flex-wrap justify-center md:justify-between space-x-4 mt-6 text-sm">
+                    <a href="#" class="hover:text-gray-100">About</a>
+                    <a href="#" class="hover:text-gray-100">Careers</a>
+                    <a href="#" class="hover:text-gray-100">Data & Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-100">Terms & Conditions</a>
+                </div>
+
+                <!-- Bottom Section -->
+                <div class="w-full flex flex-col md:flex-row justify-between items-center mt-10 text-sm text-gray-500">
+                    <!-- Bottom Left: Developed by -->
+                    <div class="flex items-center space-x-2 mb-4 md:mb-0">
+                        <img src="assets/logo.png" alt="Tech Executive Labs Logo" class="h-8 mt-2">
+                        <p>Developed by Tech Executive Labs Solutions</p>
+                    </div>
+
+                    <!-- Bottom Center: Social Media Icons -->
+                    <div class="flex space-x-6 my-4 md:my-0">
+                        <a href="https://www.facebook.com/alleon.perez.9" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+
+                    <!-- Bottom Right: Designed by -->
+                    <div>
+                        <p>Designed by Lourenz</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
-
-<!-- Lourenz Space - Testimonies Section -->
-<section class="flex flex-col items-center justify-center w-full px-6 md:px-12 bg-[#0b0d29]">
-    <!-- Title with Horizontal Lines -->
-    <div class="flex items-center w-full">
-        <div class="flex-grow border-t border-gray-500"></div>
-        <h2 class="text-4xl font-bold bg-gradient-to-r from-gray-800 via-gray-300 to-gray-800 text-transparent bg-clip-text mx-6">
-            Testimonies
-        </h2>
-        <div class="flex-grow border-t border-gray-500"></div>
-    </div>
-
-    <!-- Spacing Below Title -->
-    <div class="mb-10"></div>
-
-    <!-- Carousel Container -->
-    <div class="relative w-full overflow-hidden">
-        <div id="carousel" class="flex transition-transform duration-700 ease-in-out space-x-6">
-            <!-- Image Cards -->
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
-                <img src="assets/logo-white-bg.png" alt="Testimony 1" class="w-full h-56 object-cover">
-            </div>
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
-                <img src="assets/logo-white-bg.png" alt="Testimony 2" class="w-full h-56 object-cover">
-            </div>
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
-                <img src="assets/logo-white-bg.png" alt="Testimony 3" class="w-full h-56 object-cover">
-            </div>
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
-                <img src="assets/logo-white-bg.png" alt="Testimony 4" class="w-full h-56 object-cover">
-            </div>
-            <div class="bg-white rounded-2xl shadow-xl overflow-hidden min-w-[30%]">
-                <img src="assets/logo-white-bg.png" alt="Testimony 5" class="w-full h-56 object-cover">
-            </div>
-        </div>
-
-        <!-- Navigation Dots -->
-        <div class="flex justify-center space-x-2 mt-6">
-            <span class="dot w-3 h-3 bg-gray-500 rounded-full cursor-pointer"></span>
-            <span class="dot w-3 h-3 bg-gray-500 rounded-full cursor-pointer"></span>
-            <span class="dot w-3 h-3 bg-gray-500 rounded-full cursor-pointer"></span>
-        </div>
-    </div>
-
-    <!-- Small Paragraph Below -->
-    <p class="text-gray-300 text-lg text-center max-w-4xl mt-6 px-4">
-        Hear from those who have experienced our service firsthand. Their stories reflect the trust and satisfaction we've built over time, ensuring a seamless and reliable experience for all.
-    </p>
-</section>
-
-<!-- Footer - Full Screen Width -->
-<footer class="text-gray-300 py-10 w-full bg-[#070f2e] px-6 md:px-12">
-    <div class="flex flex-col items-center text-center md:text-left w-full">
-        <!-- Title with Logo -->
-        <div class="flex items-center space-x-3">
-            <img src="assets/logo.png" alt="Tech Executive Labs Logo" class="h-10 mt-2">
-            <h2 class="text-2xl font-bold text-white">Tech Executive Labs</h2>
-        </div>
-
-        <!-- Navigation Links -->
-        <div class="flex flex-wrap justify-center md:justify-between space-x-4 mt-6 text-sm">
-            <a href="#" class="hover:text-gray-100">About</a>
-            <a href="#" class="hover:text-gray-100">Careers</a>
-            <a href="#" class="hover:text-gray-100">Data & Privacy Policy</a>
-            <a href="#" class="hover:text-gray-100">Terms & Conditions</a>
-        </div>
-
-        <!-- Bottom Section -->
-        <div class="w-full flex flex-col md:flex-row justify-between items-center mt-10 text-sm text-gray-500">
-            <!-- Bottom Left: Developed by -->
-            <div class="flex items-center space-x-2 mb-4 md:mb-0">
-                <img src="assets/logo.png" alt="Tech Executive Labs Logo" class="h-8 mt-2">
-                <p>Developed by Tech Executive Labs Solutions</p>
-            </div>
-
-            <!-- Bottom Center: Social Media Icons -->
-            <div class="flex space-x-6 my-4 md:my-0">
-                <a href="https://www.facebook.com/alleon.perez.9" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-
-            <!-- Bottom Right: Designed by -->
-            <div>
-                <p>Designed by Lourenz</p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
+        </footer>
     </main>
-<!-- JavaScript for Carousel -->
-<script>
-    const carousel = document.getElementById("carousel");
-    const dots = document.querySelectorAll(".dot");
-    let index = 0;
-    const totalImages = 5;
-    const imagesPerSlide = 3;
 
-    function updateCarousel() {
-        let offset = index * (carousel.clientWidth / imagesPerSlide);
-        carousel.style.transform = `translateX(-${offset}px)`;
-        dots.forEach((dot, i) => {
-            dot.classList.toggle("bg-gray-300", i === index);
-        });
-    }
+    <!-- JavaScript for Carousel -->
+    <script>
+        const carousel = document.getElementById("carousel");
+        const dots = document.querySelectorAll(".dot");
+        let index = 0;
+        const totalImages = 5;
+        const imagesPerSlide = 3;
 
-    function nextSlide() {
-        index = (index + 1) % Math.ceil(totalImages / imagesPerSlide);
-        updateCarousel();
-    }
+        function updateCarousel() {
+            let offset = index * (carousel.clientWidth / imagesPerSlide);
+            carousel.style.transform = `translateX(-${offset}px)`;
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("bg-gray-300", i === index);
+            });
+        }
 
-    dots.forEach((dot, i) => {
-        dot.addEventListener("click", () => {
-            index = i;
+        function nextSlide() {
+            index = (index + 1) % Math.ceil(totalImages / imagesPerSlide);
             updateCarousel();
-        });
-    });
+        }
 
-    setInterval(nextSlide, 5000); // Auto-scroll every 5 seconds
-</script>
+        dots.forEach((dot, i) => {
+            dot.addEventListener("click", () => {
+                index = i;
+                updateCarousel();
+            });
+        });
+
+        setInterval(nextSlide, 5000); // Auto-scroll every 5 seconds
+    </script>
 </body>
 </html>
